@@ -41,7 +41,7 @@ export default function AddCustomMealItemForm({ onAddCustom }) {
         onChange={(e) => setProtein(e.target.value)}
         className="numericalInputs"
       />
-      <button onClick={handleAdd}>+ Add</button>
+      <button onClick={handleAdd}>Add</button>
     </div>
   );
 }

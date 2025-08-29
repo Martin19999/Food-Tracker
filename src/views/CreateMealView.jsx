@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddCustomMealItemForm from "../components/AddCustomMealItemForm";
 import AddSavedFoodEntryForm from "../components/AddSavedFoodEntryForm";
 import SectionSavedMealsForCreateMealView from "../components/SectionSavedMealsForCreateMealView";
 
 
 export default function CreateMealView({ defaultFoods, onSave, savedMeals, onModifySavedMeals, goBack }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [mealName, setMealName] = useState("");
   const [items, setItems] = useState([]);
 

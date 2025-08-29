@@ -128,9 +128,12 @@ button {
   background-color: #7f7fff;
   color: white;
   border-radius: 6px;
-  /* padding: 6px 12px; */
   cursor: pointer;
   text-align: center;
+  height: 1.5em;
+  /* display: inline-block;   ensures it sizes to content */
+  min-width: max-content;  /* ensures width fits text */
+  padding: 0 0.5rem; /* optional: some breathing room */
 }
 
 button:active {
