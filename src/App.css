@@ -113,7 +113,7 @@ input.small {
   transform-origin: left center;
 }
 
-button, input {
+button {
   all: unset; /* remove all native styles */
   box-sizing: border-box; /* consistent sizing */
   font-family: inherit; /* match your page font */
@@ -128,7 +128,7 @@ button {
   background-color: #7f7fff;
   color: white;
   border-radius: 6px;
-  padding: 6px 12px;
+  /* padding: 6px 12px; */
   cursor: pointer;
   text-align: center;
 }
