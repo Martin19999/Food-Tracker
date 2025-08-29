@@ -7,8 +7,9 @@ export default function SectionSavedMealsForCreateMealView({ savedMeals, onDelet
       {savedMeals.map((meal, i) => (
         <div key={i} className="secInline">
           
-          <p className="bold">{meal.mealName} {meal.totalCalories} cal, {meal.totalProtein} g</p>
-          
+          <p><b>{meal.mealName}</b></p>
+          <p>{meal.totalCalories}cal</p>
+          <p>{meal.totalProtein}g</p>
           <button variant="destructive"
                   onClick={() => onDeleteMeal(i)}>
             Delete

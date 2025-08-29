@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AddCustomMealItemForm from "../components/AddCustomMealItemForm";
+import AddSavedFoodEntryForm from "../components/AddSavedFoodEntryForm";
 import SectionSavedMealsForCreateMealView from "../components/SectionSavedMealsForCreateMealView";
 
 
@@ -62,38 +63,28 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
           ☞ Add from default foods {showSavedFoodsList ? "▼" : "▶"}</h3>
         { showSavedFoodsList && (
           <>
-            {defaultFoods.map((f, i) => (
-              <div key={i}>
-                <span>
-                  {f.name} ({f.calories} cal, {f.protein} g protein) per {f.per}g
-                </span>
-                <input
-                  value={quantities[i] || ""}
-                  onChange={(e) => handleQtyChange(i, e.target.value)}
-                  placeholder="grams"
-                  style={{ width: "80px", marginLeft: "8px" }}
-                />
-                <button
-                  onClick={() => {
-                    const grams = parseFloat(quantities[i]);
-                    if (!grams || grams <= 0) return;
+          {defaultFoods.map((f, i) => (
+            <div className="secInline" key={i}>
+              <p className="bold">{f.name}</p>
+              <p>{f.calories} cal</p>
+              <p>{f.protein} g</p>
+              <p>per {f.per}{f.perWhat}</p>
+              <AddSavedFoodEntryForm 
+                food={f} 
+                date={''} 
+                onAdd={(date, f, grams) => {
+                  const factor = grams / f.per; 
+                  addFromDefault({
+                    ...f,
+                    calories: f.calories * factor,
+                    protein: f.protein * factor,
+                    chosenGrams: grams,
+                  });
+                }} 
+              />
 
-                    const factor = grams / f.per;
-                    addFromDefault({
-                      ...f,
-                      calories: f.calories * factor,
-                      protein: f.protein * factor,
-                      chosenGrams: grams,
-                    });
-
-                    // clear after adding
-                    handleQtyChange(i, "");
-                  }}
-                >
-                  +
-                </button>
-              </div>
-            ))}
+            </div>
+          ))}
           </>
         )}
       </div>
@@ -107,6 +98,12 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
           {items.map((f, i) => (
             <li key={i}>
               {f.name}: {f.calories} cal, {f.protein} g protein
+              <button
+                onClick={() => {
+                  const newItems = items.filter((_, idx) => idx !== i);
+                  setItems(newItems);
+                }}
+              >Delete</button>
             </li>
           ))}
         </ul>
@@ -114,7 +111,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
       
 
       <p>-------------------------------------------</p>
-      <div className="secInline">
+      <div className="secInlineForTol">
         <strong>Totals:</strong> {totals.calories} cal, {totals.protein} g protein
         <button onClick={saveMeal}>Save Meal</button>
       </div>

@@ -10,7 +10,7 @@ export default function MainView({ currentDate, foods, meals, totals,
     <>
       <div className="">
         <h1 className="">Today's Totals</h1>
-        <div className="secInline">
+        <div className="secInlineForTol">
           <p>Calories: {totals.calories.toFixed(0)}</p>
           <p>Protein: {totals.protein.toFixed(0)} g</p> 
           <button className="" onClick={goHistory}>View History</button>  

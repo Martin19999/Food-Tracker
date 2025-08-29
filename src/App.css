@@ -9,7 +9,7 @@ body {
 .secInline {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .secInline > * {
@@ -18,7 +18,18 @@ body {
 }
 
 .secInline > *:first-child {
-  
+  width: 15rem;
+}
+
+.secInlineForTol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secInlineForTol > * {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .divCentre {
@@ -26,7 +37,7 @@ body {
 }
 
 .numericalInputs {
-  width: 60px;
+  width: 3rem;
   text-align: right;
   font-size: 16px; /* avoid Safari zoom */
   /* padding: 4px; */
