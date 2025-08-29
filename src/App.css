@@ -112,3 +112,31 @@ input.small {
   transform: scale(0.9);
   transform-origin: left center;
 }
+
+button, input {
+  all: unset; /* remove all native styles */
+  box-sizing: border-box; /* consistent sizing */
+  font-family: inherit; /* match your page font */
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  background-color: #7f7fff;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:active {
+  background-color: #5f5fdf; /* active state for touch feedback */
+}
+
+input, textarea, select {
+  font-size: 16px !important;
+}
