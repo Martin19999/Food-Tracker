@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function AddSavedFoodEntryForm({ food, date, onAdd }) {
   const [portion, setPortion] = useState("");
   return (
-    <div className="divCentre">
+    <>
       
       <input
         value={portion}
@@ -17,7 +17,7 @@ export default function AddSavedFoodEntryForm({ food, date, onAdd }) {
           onAdd(date, food, parseFloat((portion || 1) * food.per))
         }
       >+</button>
-    </div>
+    </>
   );
 }
 
