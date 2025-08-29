@@ -16,9 +16,7 @@ export default function AddSavedFoodEntryForm({ food, date, onAdd }) {
         onClick={() =>
           onAdd(date, food, parseFloat((portion || 1) * food.per))
         }
-      >
-        Add
-      </button>
+      >+</button>
     </div>
   );
 }

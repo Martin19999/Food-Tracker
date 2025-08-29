@@ -17,14 +17,14 @@ export default function ManualEntryForm({ date, onAdd }) {
       />
       <input
         // type="number"
-        placeholder="Calories"
+        placeholder="Cal"
         value={cal}
         onChange={(e) => setCal(e.target.value)}
         className="numericalInputs"
       />
       <input
         // type="number"
-        placeholder="Protein (g)"
+        placeholder="Protein"
         value={prot}
         onChange={(e) => setProt(e.target.value)}
         className="numericalInputs"

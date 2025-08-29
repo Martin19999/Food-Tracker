@@ -11,7 +11,7 @@ export default function SectionSavedFoods({ foods, date, onAddFromFood }) {
           <p className="bold">{food.name}</p>
           <p>{food.calories} cal</p>
           <p>{food.protein} g</p>
-          <p>per {food.per}g</p>
+          <p>per {food.per}{food.perWhat}</p>
           <AddSavedFoodEntryForm food={food} date={date} onAdd={onAddFromFood} />
         </div>     
     ))}

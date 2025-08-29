@@ -17,13 +17,25 @@ body {
   margin-bottom: 1px;
 }
 
-.numericalInputs {
-  width: 30px;
+.secInline > *:first-child {
+  
 }
 
-.textInputs {
-  width: 200px;
+.divCentre {
+  min-width: 100px;
 }
+
+.numericalInputs {
+  width: 60px;
+  text-align: right;
+  font-size: 16px; /* avoid Safari zoom */
+  /* padding: 4px; */
+}
+
+
+/* .textInputs {
+  width: 200px;
+} */
 
 /* Base font settings for iPhone 12 / similar devices */
 html {
