@@ -76,3 +76,16 @@ textarea {
   h2 { font-size: 1.7rem; }
   h3 { font-size: 1.4rem; }
 }
+
+input,
+textarea,
+select,
+button {
+  font-size: 16px;
+}
+
+input.small {
+  font-size: 16px;      /* prevents Safari zoom */
+  transform: scale(0.9);
+  transform-origin: left center;
+}
