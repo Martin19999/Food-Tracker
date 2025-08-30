@@ -6,8 +6,9 @@ const rawFoods = [
   ["Mayonaise", 6.86, 0.08, 1, "g"],
 
   // Carbs
-  ["Bagel raisin & cinnamon", 233, 8.2, 1, ""],
+  ["Honey hoop", 3.86, 0.091, 1, "g"],
   ["Oats", 37, 1.1, 10, "g"],
+  ["Bagel raisin & cinnamon", 233, 8.2, 1, ""],
   ["Penne rigate", 350, 12.5, 100, "g"],
 
 
@@ -26,7 +27,7 @@ const rawFoods = [
 
   // -------------------Veg----------------------
 
-  ["4 berries medely", 49, 1, 100, "g"],
+  ["4 berries medley", 49, 1, 100, "g"],
 
   // ------------Common Seasonings-------------
   ["Olive oil", 8, 0, 1, "ml"],
