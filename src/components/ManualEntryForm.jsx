@@ -17,7 +17,7 @@ export default function ManualEntryForm({ date, onAdd }) {
       />
       <input
         // type="number"
-        placeholder="Cal"
+        placeholder="Energy"
         value={cal}
         onChange={(e) => setCal(e.target.value)}
         className="numericalInputs"

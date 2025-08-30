@@ -6,13 +6,39 @@ import SectionSavedMeals from '../components/SectionSavedMeals';
 
 export default function MainView({ currentDate, foods, meals, totals, 
   onAdd, onAddFromFood, goCreateMeal,goHistory }) {
+
+  function getOrdinalSuffix(day) {
+    if (day > 3 && day < 21) return "th"; // 11th–20th
+    switch (day % 10) {
+      case 1: return "st";
+      case 2: return "nd";
+      case 3: return "rd";
+      default: return "th";
+    }
+  }
+  function formatToDDMonthWithOrdinal(dateStr) {
+    const [year, month, day] = dateStr.split("-");
+    const dayNum = parseInt(day, 10);
+
+    const monthName = new Date(year, month - 1, dayNum).toLocaleString("en-GB", {
+      month: "long",
+    });
+
+    return (
+      <>
+        {dayNum}
+        <sup>{getOrdinalSuffix(dayNum)}</sup> {monthName}
+      </>
+    );
+  }
+
   return (
     <>
       <div className="">
-        <h1 className="">Today's Totals</h1>
+        <h1 className="">Today is: <small><i>{formatToDDMonthWithOrdinal(currentDate)}</i></small></h1>
         <div className="secInlineForTol">
-          <p>Calories: {totals.calories.toFixed(0)}</p>
-          <p>Protein: {totals.protein.toFixed(0)} g</p> 
+          <p><b>Energy: </b>{totals.calories.toFixed(0)} cal</p>
+          <p><b>Protein: </b>{totals.protein.toFixed(0)} g</p> 
           <button className="" onClick={goHistory}>View History</button>  
         </div>    
       </div>
@@ -23,7 +49,9 @@ export default function MainView({ currentDate, foods, meals, totals,
       <SectionSavedMeals meals={meals} date={currentDate} onAddFromFood={onAddFromFood} />
       
       <p>-------------------------------------------</p>
-      <button className="" onClick={goCreateMeal}>Create a meal</button>
+      <button className="" onClick={goCreateMeal}>Create a Meal</button>
+      <p></p>
+      <p></p>
     </>
   );
 }

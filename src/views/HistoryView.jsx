@@ -9,6 +9,11 @@ export default function HistoryView({ entriesByDate, getTotals, goBack, onDelete
     setExpandedDate(expandedDate === date ? null : date);
   };
 
+  function formatToDDMMYYYY(dateStr) {
+    const [year, month, day] = dateStr.split("-");
+    return `${day}-${month}-${year}`;
+  }
+
   return (
     <div>
       <button className="" onClick={goBack}>Back</button>
@@ -27,7 +32,7 @@ export default function HistoryView({ entriesByDate, getTotals, goBack, onDelete
                   onClick={() => toggleExpand(date)}
                   className=""
                 >
-                  {date}: {totals.calories.toFixed(0)} cal, {totals.protein.toFixed(0)} g protein
+                  {formatToDDMMYYYY(date)}: {totals.calories.toFixed(0)} cal, {totals.protein.toFixed(0)} g protein
                 </div>
 
                 {/* Expanded entry history for this date */}

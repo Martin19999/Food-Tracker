@@ -20,7 +20,7 @@ export default function AddCustomMealItemForm({ onAddCustom }) {
 
   return (
     <div>
-      <h3>☞ Add custom item</h3>
+      <h3>☞ Add a custom item</h3>
       <input
         placeholder="Name"
         value={name}
@@ -28,7 +28,7 @@ export default function AddCustomMealItemForm({ onAddCustom }) {
         className="textInput"
       />
       <input
-        placeholder="Calories"
+        placeholder="Energy"
         // type="number"
         value={calories}
         onChange={(e) => setCalories(e.target.value)}

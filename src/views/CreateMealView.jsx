@@ -49,6 +49,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
 
   return (
     <div>
+      <p></p>
       <button onClick={goBack}>Back</button>
       <h2>Create a Meal</h2>
       <input
@@ -96,7 +97,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
 
       
 
-      <h3 onClick={() => setShowCurrentAdded(!showCurrentAdded)}>☞ Current Items for the meal {showCurrentAdded ? "▼" : "▶"}</h3>
+      <h3 onClick={() => setShowCurrentAdded(!showCurrentAdded)}>☞ Current items for this meal {showCurrentAdded ? "▼" : "▶"}</h3>
       { showCurrentAdded && (
         <ul>
           {items.map((f, i) => (
@@ -117,7 +118,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
       <p>-------------------------------------------</p>
       <div className="secInlineForTol">
         <strong>Totals:</strong> {totals.calories} cal, {totals.protein} g protein
-        <button onClick={saveMeal}>Save Meal</button>
+        <button onClick={saveMeal}>Save This Meal</button>
       </div>
 
       
