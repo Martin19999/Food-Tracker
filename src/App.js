@@ -89,7 +89,7 @@ export default function App() {
   const addFromFood = (date, food, grams) => {
     const calories = (food.calories / food.per) * grams;
     const protein = (food.protein / food.per) * grams;
-    addEntry(date, `${grams}g ${food.name}`, calories, protein);
+    addEntry(date, `${grams}${food.perWhat}${food.name}`, calories, protein);
   };
 
   // UI state for switching views

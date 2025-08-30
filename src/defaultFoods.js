@@ -3,6 +3,7 @@ const rawFoods = [
   ["Milk", 64, 3.4, 100, "ml"],
   ["Egg", 81, 7.8, 1, ""],
   ["Tesco penaut butter", 6.33, 0.245, 1, "g"],
+  ["Mayonaise", 6.86, 0.08, 1, "g"],
 
   // Carbs
   ["Bagel raisin & cinnamon", 233, 8.2, 1, ""],
@@ -25,6 +26,8 @@ const rawFoods = [
 
   // -------------------Veg----------------------
 
+  ["4 berries medely", 49, 1, 100, "g"],
+
   // ------------Common Seasonings-------------
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
@@ -34,6 +37,7 @@ const rawFoods = [
   ["Unsalted butter", 7.57, 0.005, 1, "g"],
   ["Green Pesto", 4.64, 0.045, 1, "g"],
   ["Honey", 3.29, 0, 1, "g"],
+  ["Dijon mustard", 1.56, 0.02, 1, "g"],
 
 ];
 

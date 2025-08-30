@@ -29,7 +29,13 @@ export default function ManualEntryForm({ date, onAdd }) {
         onChange={(e) => setProt(e.target.value)}
         className="numericalInputs"
       />
-      <button onClick={() => onAdd(date, name, parseFloat(cal), parseFloat(prot))}>
+      <button onClick={() => {
+        onAdd(date, name, parseFloat(cal), parseFloat(prot));
+        setName("");
+        setCal("");
+        setProt("");
+        
+        }}>
         Add
       </button>
     </div>
