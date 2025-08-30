@@ -9,17 +9,6 @@ const rawFoods = [
   ["Oats", 37, 1.1, 10, "g"],
   ["Penne rigate", 350, 12.5, 100, "g"],
 
-  // ------------Common Seasonings-------------
-  ["Olive oil", 8, 0, 1, "ml"],
-  ["Soy sauce", 1.2, 0.092, 1, "ml"],
-  ["Seasame oil", 8.28, 0, 1, "ml"],
-  ["Rice vinegar", 0.15, 0, 1, "ml"],
-  ["Balsamic vinegar dressing", 3.49, 0.03, 1, "ml"],
-  ["Unsalted butter", 7.57, 0.005, 1, "g"],
-  ["Green Pesto", 4.64, 0.045, 1, "g"],
-  ["Honey", 3.29, 0, 1, "g"],
-  
-
 
   // ----------------Lidl Meat------------------
   //Chicken
@@ -35,6 +24,16 @@ const rawFoods = [
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
 
   // -------------------Veg----------------------
+
+  // ------------Common Seasonings-------------
+  ["Olive oil", 8, 0, 1, "ml"],
+  ["Soy sauce", 1.2, 0.092, 1, "ml"],
+  ["Seasame oil", 8.28, 0, 1, "ml"],
+  ["Rice vinegar", 0.15, 0, 1, "ml"],
+  ["Balsamic vinegar dressing", 3.49, 0.03, 1, "ml"],
+  ["Unsalted butter", 7.57, 0.005, 1, "g"],
+  ["Green Pesto", 4.64, 0.045, 1, "g"],
+  ["Honey", 3.29, 0, 1, "g"],
 
 ];
 

@@ -15,10 +15,26 @@ body {
 .secInline > * {
   margin-top: 1px;
   margin-bottom: 1px;
+  /* height: 2rem; */
 }
 
 .secInline > *:first-child {
-  width: 15rem;
+  width: 13rem;
+}
+.secInline > *:nth-child(2) {
+  /* second element */
+  width: 3rem;
+  font-size: 12px;
+}
+.secInline > *:nth-child(3) {
+  /* second element */
+  width: 3rem;
+  font-size: 12px;
+}
+.secInline > *:nth-child(4) {
+  /* second element */
+  width: 3rem;
+  font-size: 12px;
 }
 
 .secInlineForTol {
