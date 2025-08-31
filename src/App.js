@@ -87,8 +87,8 @@ export default function App() {
 
   // Add from Food or meals
   const addFromFood = (date, food, grams) => {
-    const calories = (food.calories / food.per) * grams;
-    const protein = (food.protein / food.per) * grams;
+    const calories = ((food.calories / food.per) * grams).toFixed(1);
+    const protein = ((food.protein / food.per) * grams).toFixed(1);
     addEntry(date, `${grams}${food.perWhat} ${food.name}`, calories, protein);
   };
 
