@@ -5,8 +5,7 @@ export default function SectionSavedMealsForCreateMealView({ savedMeals, onDelet
       <h2>Saved Meals</h2>
       {savedMeals.length === 0 && <p>No saved meals yet.</p>}
       {savedMeals.map((meal, i) => (
-        <div key={i} className="secInline">
-          
+        <div key={i} className="secInlineForTol">
           <p><b>{meal.mealName}</b></p>
           <p>{meal.totalCalories}cal</p>
           <p>{meal.totalProtein}g</p>
