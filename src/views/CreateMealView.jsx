@@ -105,7 +105,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
         <ul>
           {items.map((f, i) => (
             <li key={i}>
-              {f.name}: {f.calories} cal, {f.protein} g protein
+              {f.name}: {formatNumber(f.calories)} cal, {formatNumber(f.protein)} g protein
               <button
                 onClick={() => {
                   const newItems = items.filter((_, idx) => idx !== i);
