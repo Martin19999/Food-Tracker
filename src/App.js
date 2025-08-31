@@ -29,8 +29,8 @@ export default function App() {
       const list = savedEntries[date];
       totals[date] = list.reduce(
         (acc, e) => ({
-          calories: acc.calories + e.calories,
-          protein: acc.protein + e.protein,
+          calories: acc.calories + Number(e.calories),
+          protein: acc.protein + Number(e.protein),
         }),
         { calories: 0, protein: 0 }
       );
@@ -49,8 +49,8 @@ export default function App() {
   const recalcTotals = (list) =>
     list.reduce(
       (acc, e) => ({
-        calories: acc.calories + e.calories,
-        protein: acc.protein + e.protein,
+        calories: acc.calories + Number(e.calories),
+        protein: acc.protein + Number(e.protein),
       }),
       { calories: 0, protein: 0 }
     );
@@ -89,7 +89,7 @@ export default function App() {
   const addFromFood = (date, food, grams) => {
     const calories = (food.calories / food.per) * grams;
     const protein = (food.protein / food.per) * grams;
-    addEntry(date, `${Number(grams).toFixed(0)}${food.perWhat }${food.name}`, calories, protein);
+    addEntry(date, `${Number(grams).toFixed(0)}${food.perWhat } ${food.name}`, calories, protein);
   };
 
   // UI state for switching views
