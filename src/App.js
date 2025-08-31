@@ -85,12 +85,32 @@ export default function App() {
   // Total display on MainView
   const getTotals = (date) => totalsByDate[date] || { calories: 0, protein: 0 };
 
+  function formatNumber(value) {
+    return Number.isInteger(value) ? value : value.toFixed(2);
+  }
+  
   // Add from Food or meals
-  const addFromFood = (date, food, grams) => {
-    const calories = (food.calories / food.per) * grams;
-    const protein = (food.protein / food.per) * grams;
-    addEntry(date, `${Number(grams).toFixed(0)}${food.perWhat } ${food.name}`, calories, protein);
-  };
+  const addFromFood = (date, food, qty) => {
+  let calories, protein, displayQty, displayUnit;
+
+  if (food.items) {
+    // This is a saved meal
+    const factor = qty / food.per; // e.g. 0.25 portion
+    calories = food.totalCalories * factor;
+    protein = food.totalProtein * factor;
+    displayQty = formatNumber(qty);
+    displayUnit = food.perWhat || "portion";
+  } else {
+    // This is a normal food
+    calories = (food.calories / food.per) * qty;
+    protein = (food.protein / food.per) * qty;
+    displayQty = formatNumber(qty);
+    displayUnit = food.perWhat || "";
+  }
+
+  addEntry(date, `${displayQty} ${displayUnit} ${food.mealName || food.name}`, calories, protein);
+};
+
 
   // UI state for switching views
   const [view, setView] = useState("today"); // today | history | day

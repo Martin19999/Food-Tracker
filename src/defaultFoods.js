@@ -18,15 +18,16 @@ const rawFoods = [
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
 
   //Beef
+  ["Beef mince 5% fat", 133, 21.3, 100, "g"],
   ["Beef mince 10% fat", 170, 20.3, 100, "g"],
-  ["Steak mince 15% fat", 190, 19.7, 100, "g"],
+  ["Beef mince 15% fat", 190, 19.7, 100, "g"],
   ["Beef stir fry", 115, 21.4, 100, "g"],
 
   //Seafood
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
 
   // -------------------Veg----------------------
-
+  ["Frozen peas", 70, 5.5, 100, "g"],
   ["4 berries medley", 49, 1, 100, "g"],
 
   // ------------Common Seasonings-------------

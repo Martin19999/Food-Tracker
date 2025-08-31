@@ -40,12 +40,14 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
       items,
       totalCalories: totals.calories,
       totalProtein: totals.protein,
+      per: 1,
+      perWhat: "portion",
     };
     onSave(newMeal);
   };
 
   const [showSavedFoodsList, setShowSavedFoodsList] = useState(false);
-  const [showCurrentAdded, setShowCurrentAdded] = useState(false);
+  const [showCurrentAdded, setShowCurrentAdded] = useState(true);
 
   return (
     <div>
@@ -118,7 +120,12 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
       <p>-------------------------------------------</p>
       <div className="secInlineForTol">
         <strong>Totals:</strong> {totals.calories} cal, {totals.protein} g protein
-        <button onClick={saveMeal}>Save This Meal</button>
+        <button onClick={() => {
+            saveMeal();          // save the meal
+            setMealName("");     // clear meal name
+            setItems([]);        // clear all added items
+            setQuantities({});
+          }}>Save This Meal</button>
       </div>
 
       
