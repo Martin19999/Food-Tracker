@@ -86,7 +86,7 @@ export default function App() {
   const getTotals = (date) => totalsByDate[date] || { calories: 0, protein: 0 };
 
   function formatNumber(value) {
-    return Number.isInteger(value) ? value : value.toFixed(2);
+    return Number.isInteger(Number(value)) ? value : Number(value).toFixed(2);
   }
   
   // Add from Food or meals

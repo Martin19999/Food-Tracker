@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import AddCustomMealItemForm from "../components/AddCustomMealItemForm";
 import AddSavedFoodEntryForm from "../components/AddSavedFoodEntryForm";
 import SectionSavedMealsForCreateMealView from "../components/SectionSavedMealsForCreateMealView";
+import {formatNumber} from "../App";
 
 
 export default function CreateMealView({ defaultFoods, onSave, savedMeals, onModifySavedMeals, goBack }) {
@@ -119,7 +120,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
 
       <p>-------------------------------------------</p>
       <div className="secInlineForTol">
-        <strong>Totals:</strong> {totals.calories} cal, {totals.protein} g protein
+        <strong>Totals:</strong> {formatNumber(totals.calories)} cal, {formatNumber(totals.protein)} g protein
         <button onClick={() => {
             saveMeal();          // save the meal
             setMealName("");     // clear meal name
