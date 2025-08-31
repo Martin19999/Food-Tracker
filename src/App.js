@@ -9,6 +9,10 @@ function getToday() {
   return new Date().toISOString().slice(0, 10);
 }
 
+export function formatNumber(value) {
+    return Number.isInteger(Number(value)) ? value : Number(value).toFixed(2);
+}
+
 export default function App() {
   const [currentDate, setCurrentDate] = useState(getToday());
   useEffect(() => {
@@ -85,9 +89,6 @@ export default function App() {
   // Total display on MainView
   const getTotals = (date) => totalsByDate[date] || { calories: 0, protein: 0 };
 
-  function formatNumber(value) {
-    return Number.isInteger(Number(value)) ? value : Number(value).toFixed(2);
-  }
   
   // Add from Food or meals
   const addFromFood = (date, food, qty) => {
