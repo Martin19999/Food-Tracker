@@ -37,8 +37,8 @@ export default function MainView({ currentDate, foods, meals, totals,
       <div className="">
         <h1 className="">Today is: <small><i>{formatToDDMonthWithOrdinal(currentDate)}</i></small></h1>
         <div className="secInlineForTol">
-          <p><b>Energy: </b>{totals.calories.toFixed(0)} cal</p>
-          <p><b>Protein: </b>{totals.protein.toFixed(0)} g</p> 
+          <p><b>Energy: </b>{Number(totals.calories).toFixed(0)} cal</p>
+          <p><b>Protein: </b>{Number(totals.protein).toFixed(0)} g</p> 
           <button className="" onClick={goHistory}>View History</button>  
         </div>    
       </div>

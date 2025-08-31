@@ -32,7 +32,7 @@ export default function HistoryView({ entriesByDate, getTotals, goBack, onDelete
                   onClick={() => toggleExpand(date)}
                   className=""
                 >
-                  {formatToDDMMYYYY(date)}: {totals.calories.toFixed(0)} cal, {totals.protein.toFixed(0)} g protein
+                  {formatToDDMMYYYY(date)}: {Number(totals.calories).toFixed(0)} cal, {Number(totals.protein).toFixed(0)} g protein
                 </div>
 
                 {/* Expanded entry history for this date */}
