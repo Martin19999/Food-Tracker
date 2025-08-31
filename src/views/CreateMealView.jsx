@@ -39,8 +39,8 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
     const newMeal = {
       mealName,
       items,
-      totalCalories: totals.calories,
-      totalProtein: totals.protein,
+      totalCalories: formatNumber(totals.calories),
+      totalProtein: formatNumber(totals.protein),
       per: 1,
       perWhat: "portion",
     };
