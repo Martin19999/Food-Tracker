@@ -72,6 +72,8 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
         { showSavedFoodsList && (
           <>
           {defaultFoods.map((f, i) => (
+            <>
+            {(i === 10 || i === 18 || i===23)? <p>-------------------------------------------</p> : null}
             <div className="secInline" key={i}>
               <p className="bold">{f.name}</p>
               <p>{f.calories} cal</p>
@@ -92,6 +94,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
               />
 
             </div>
+            </>
           ))}
           </>
         )}
