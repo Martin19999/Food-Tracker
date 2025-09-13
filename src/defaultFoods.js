@@ -1,11 +1,10 @@
 const rawFoods = [
-  // Breakfast
+  // ----------------Breakfast & carbs ------------------9
   ["Milk", 64, 3.4, 100, "ml"],
   ["Egg", 81, 7.8, 1, ""],
   ["Tesco penaut butter", 6.33, 0.245, 1, "g"],
   ["Mayonaise", 6.86, 0.08, 1, "g"],
 
-  // Carbs
   ["Honey hoop", 3.86, 0.091, 1, "g"],
   ["Oats", 37, 1.1, 10, "g"],
   ["Brennan blue/brown", 95, 3.7, 1, "slice"],
@@ -13,7 +12,7 @@ const rawFoods = [
   ["Penne rigate", 350, 12.5, 100, "g"],
   ["Potato", 77, 2, 100, "g"],
 
-  // ----------------Lidl Meat------------------
+  // ----------------Lidl Meat------------------8(17)
   //Chicken
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
@@ -28,12 +27,12 @@ const rawFoods = [
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
   ["Sardine in sunflower oil", 218, 23, 100, "g"],
 
-  // -------------------Veg----------------------
+  // -------------------Veg----------------------5(22)
   ["Tofu", 118, 13, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
   ["4 berries medley", 49, 1, 100, "g"],
   ["Spinach", 23, 2.2, 100, "g"],
-  ["Red onion (70g)", 40, 1, 100, ""],
+  ["Red onion (70g)", 40, 1, 1, ""],
 
 
   // ------------Common Seasonings-------------
