@@ -8,9 +8,10 @@ const rawFoods = [
   // Carbs
   ["Honey hoop", 3.86, 0.091, 1, "g"],
   ["Oats", 37, 1.1, 10, "g"],
+  ["Brennan blue/brown", 95, 3.7, 1, "slice"],
   ["Bagel raisin & cinnamon", 233, 8.2, 1, ""],
   ["Penne rigate", 350, 12.5, 100, "g"],
-
+  ["Potato", 77, 2, 100, "g"],
 
   // ----------------Lidl Meat------------------
   //Chicken
@@ -25,10 +26,15 @@ const rawFoods = [
 
   //Seafood
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
+  ["Sardine in sunflower oil", 218, 23, 100, "g"],
 
   // -------------------Veg----------------------
+  ["Tofu", 118, 13, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
   ["4 berries medley", 49, 1, 100, "g"],
+  ["Spinach", 23, 2.2, 100, "g"],
+  ["Red onion (70g)", 40, 1, 100, ""],
+
 
   // ------------Common Seasonings-------------
   ["Olive oil", 8, 0, 1, "ml"],
