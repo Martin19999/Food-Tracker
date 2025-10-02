@@ -8,7 +8,7 @@ export default function SectionSavedFoods({ foods, date, onAddFromFood }) {
       <h3 className=""> ☞ Saved Foods</h3> 
       {foods.map((food,i) => (
         <>
-        {(i === 10 || i === 19 || i=== 26 )? <p>-------------------------------------------</p> : null}
+        {(i === 10 || i === 20 || i=== 27 )? <p>-------------------------------------------</p> : null}
         <div className="secInline" key={i}>
           <p className="bold">{food.name}</p>
           <p>{food.calories}</p>
