@@ -12,7 +12,7 @@ const rawFoods = [
   ["Penne rigate", 350, 12.5, 100, "g"],
   ["Potato", 77, 2, 100, "g"],
 
-  // ----------------Lidl Meat------------------9(19)
+  // ----------------Lidl Meat------------------10(20)
   //Chicken
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
@@ -23,6 +23,7 @@ const rawFoods = [
   ["Beef mince 15% fat", 190, 19.7, 100, "g"],
   ["Beef for stew", 129, 22.5, 100, "g"],
   ["Beef stir fry", 115, 21.4, 100, "g"],
+  ["Beef burgers 454g", 269, 21, 1, ""],
 
   //Seafood
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
@@ -49,8 +50,9 @@ const rawFoods = [
   ["Honey", 3.29, 0, 1, "g"],
   ["Dijon mustard", 1.56, 0.02, 1, "g"],
   ["Pesto", 364, 4.1, 100, "g"],
+  ["Cornflour", 35.4, 0.06, 10, "g"],
   ["Mozzarella cheese", 309, 23.3, 100, "g"],
-
+  ["Red cheddar", 83, 5.1, 1, "slice"],
 ];
 
 export const defaultFoods = rawFoods.map(([name, calories, protein, per, perWhat]) => ({
