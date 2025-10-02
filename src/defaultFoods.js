@@ -1,3 +1,7 @@
+export const V1 = 10;
+export const V2 = 20;
+export const V3 = 27;
+
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------10
   ["Milk", 64, 3.4, 100, "ml"],

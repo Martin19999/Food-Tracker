@@ -3,7 +3,7 @@ import AddCustomMealItemForm from "../components/AddCustomMealItemForm";
 import AddSavedFoodEntryForm from "../components/AddSavedFoodEntryForm";
 import SectionSavedMealsForCreateMealView from "../components/SectionSavedMealsForCreateMealView";
 import {formatNumber} from "../App";
-
+import { V1, V2, V3 } from "../defaultFoods";
 
 export default function CreateMealView({ defaultFoods, onSave, savedMeals, onModifySavedMeals, goBack }) {
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
           <>
           {defaultFoods.map((f, i) => (
             <>
-            {(i === 10 || i === 20 || i=== 27 )? <p>-------------------------------------------</p> : null}
+            {(i === V1 || i === V2 || i=== V3 )? <p>-------------------------------------------</p> : null}
             <div className="secInline" key={i}>
               <p className="bold">{f.name}</p>
               <p>{f.calories} cal</p>
