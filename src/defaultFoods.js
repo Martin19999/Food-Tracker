@@ -1,6 +1,6 @@
 export const V1 = 10;
 export const V2 = 21;
-export const V3 = 28;
+export const V3 = 29;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
@@ -45,7 +45,7 @@ const rawFoods = [
   ["Frozen corn", 77, 3.6, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 7 (28)
+  // ------------Common Seasonings & Others------------- 8 (29)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
