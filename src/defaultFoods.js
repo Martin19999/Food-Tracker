@@ -1,6 +1,6 @@
 export const V1 = 10;
-export const V2 = 20;
-export const V3 = 27;
+export const V2 = 21;
+export const V3 = 28;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
@@ -25,6 +25,7 @@ const rawFoods = [
   ["Beef mince 5% fat", 133, 21.3, 100, "g"],
   ["Beef mince 10% fat", 170, 20.3, 100, "g"],
   ["Beef mince 15% fat", 190, 19.7, 100, "g"],
+  ["Rib eye steaks", 201, 21.6, 100, "g"],
   ["Beef for stew", 129, 22.5, 100, "g"],
   ["Beef stir fry", 115, 21.4, 100, "g"],
   ["Beef burgers 454g", 269, 21, 1, ""],
@@ -33,7 +34,7 @@ const rawFoods = [
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
   ["Sardine in sunflower oil", 218, 23, 100, "g"],
 
-  // -------------------Veg----------------------10 (20)
+  // -------------------Veg----------------------11 (21)
   ["Tofu", 118, 13, 100, "g"],
   ["Baked beans", 81, 4.8, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
@@ -41,9 +42,11 @@ const rawFoods = [
   ["Spinach", 23, 2.2, 100, "g"],
   ["Red onion (70g)", 40, 1, 1, ""],
   ["Tomato", 18, 0.7, 100, "g"],
+  ["Frozen corn", 77, 3.6, 100, "g"],
 
 
-  // ------------Common Seasonings------------- 7 (27)
+  // ------------Common Seasonings & Others------------- 7 (28)
+  ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
   ["Seasame oil", 8.28, 0, 1, "ml"],
