@@ -1,6 +1,6 @@
-export const V1 = 10;
-export const V2 = 22;
-export const V3 = 30;
+export const V1 = 12;
+export const V2 = 26;
+export const V3 = 34;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
@@ -18,7 +18,7 @@ const rawFoods = [
   ["Penne rigate/Semolina", 350, 12.5, 100, "g"],
   ["Potato", 77, 2, 100, "g"],
 
-  // ----------------Lidl Meat------------------10
+  // ----------------Lidl Meat------------------12
   //Chicken
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
@@ -39,7 +39,7 @@ const rawFoods = [
   ["Tuna in spring water", 111, 26, 100, "g"],
   ["Prawns", 56, 12.1, 100, "g"],
 
-  // -------------------Veg----------------------12 (22)
+  // -------------------Veg----------------------14 (26)
   ["Tofu", 118, 13, 100, "g"],
   ["Baked beans", 81, 4.8, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
@@ -50,7 +50,7 @@ const rawFoods = [
   ["Frozen corn", 77, 3.6, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 8 (30)
+  // ------------Common Seasonings & Others------------- 8 (34)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
