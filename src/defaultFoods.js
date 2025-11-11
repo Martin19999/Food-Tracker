@@ -1,10 +1,11 @@
 export const V1 = 10;
-export const V2 = 21;
-export const V3 = 29;
+export const V2 = 22;
+export const V3 = 30;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
   ["Milk", 64, 3.4, 100, "ml"],
+  ["Greek yogurt", 137, 5.1, 100, "g"],
   ["Egg", 81, 7.8, 1, ""],
   ["Tesco penaut butter", 6.33, 0.245, 1, "g"],
   ["Mayonaise", 6.86, 0.08, 1, "g"],
@@ -12,6 +13,7 @@ const rawFoods = [
   ["Honey hoop/wheatie", 3.86, 0.091, 1, "g"],
   ["Oats", 37, 1.1, 10, "g"],
   ["Brennan blue/brown", 95, 3.7, 1, "slice"],
+  ["Connell brown", 86, 4, 1, "slice"],
   ["Bagel raisin & cinnamon", 233, 8.2, 1, ""],
   ["Penne rigate/Semolina", 350, 12.5, 100, "g"],
   ["Potato", 77, 2, 100, "g"],
@@ -20,6 +22,7 @@ const rawFoods = [
   //Chicken
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
+  ["Chicken thighs 1000g", 193, 17.1, 100, "g"],
 
   //Beef
   ["Beef mince 5% fat", 133, 21.3, 100, "g"],
@@ -33,8 +36,10 @@ const rawFoods = [
   //Seafood
   ["4 skin on salmon darnes", 204, 19.1, 100, "g"],
   ["Sardine in sunflower oil", 218, 23, 100, "g"],
+  ["Tuna in spring water", 111, 26, 100, "g"],
+  ["Prawns", 56, 12.1, 100, "g"],
 
-  // -------------------Veg----------------------11 (21)
+  // -------------------Veg----------------------12 (22)
   ["Tofu", 118, 13, 100, "g"],
   ["Baked beans", 81, 4.8, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
@@ -45,7 +50,7 @@ const rawFoods = [
   ["Frozen corn", 77, 3.6, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 8 (29)
+  // ------------Common Seasonings & Others------------- 8 (30)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
