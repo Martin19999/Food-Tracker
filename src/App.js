@@ -115,7 +115,6 @@ export default function App() {
 
   // UI state for switching views
   const [view, setView] = useState("today"); // today | history | day
-  const [viewDate, setViewDate] = useState(getToday());
 
   return (
     <div className="">

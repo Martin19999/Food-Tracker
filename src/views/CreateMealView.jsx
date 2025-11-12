@@ -13,15 +13,8 @@ export default function CreateMealView({ defaultFoods, onSave, savedMeals, onMod
   const [mealName, setMealName] = useState("");
   const [items, setItems] = useState([]);
 
-  // 
-  const [quantities, setQuantities] = useState({}); // store per-food qtys
-  const handleQtyChange = (i, value) => {
-    setQuantities((prev) => ({
-      ...prev,
-      [i]: value,
-    }));
-  };
-
+  const [,setQuantities] = useState({}); // store per-food qtys
+ 
   // Add from default foods
   const addFromDefault = (food) => {
     setItems([...items, food]);
