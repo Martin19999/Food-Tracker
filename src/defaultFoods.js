@@ -1,6 +1,6 @@
 export const V1 = 12;
-export const V2 = 26;
-export const V3 = 34;
+export const V2 = 27;
+export const V3 = 35;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
@@ -23,12 +23,14 @@ const rawFoods = [
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
   ["Chicken thighs 1000g", 193, 17.1, 100, "g"],
+  ["Skinless boneless chicken thighs", 134, 19.5, 100, "g"],
 
   //Beef
   ["Beef mince 5% fat", 133, 21.3, 100, "g"],
   ["Beef mince 10% fat", 170, 20.3, 100, "g"],
   ["Beef mince 15% fat", 190, 19.7, 100, "g"],
-  ["Rib eye steaks", 201, 21.6, 100, "g"],
+  // ["Rib eye steaks", 201, 21.6, 100, "g"],
+  ["2 Rib eye steaks", 256, 19, 100, "g"],
   ["Beef for stew", 129, 22.5, 100, "g"],
   ["Beef stir fry", 115, 21.4, 100, "g"],
   ["Beef burgers 454g", 269, 21, 1, ""],
@@ -39,7 +41,7 @@ const rawFoods = [
   ["Tuna in spring water", 111, 26, 100, "g"],
   ["Prawns", 56, 12.1, 100, "g"],
 
-  // -------------------Veg----------------------14 (26)
+  // -------------------Veg----------------------15 (27)
   ["Tofu", 118, 13, 100, "g"],
   ["Baked beans", 81, 4.8, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
@@ -50,7 +52,7 @@ const rawFoods = [
   ["Frozen corn", 77, 3.6, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 8 (34)
+  // ------------Common Seasonings & Others------------- 8 (35)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
