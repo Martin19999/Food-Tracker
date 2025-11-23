@@ -1,6 +1,6 @@
 export const V1 = 12;
 export const V2 = 27;
-export const V3 = 40;
+export const V3 = 42;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
@@ -56,9 +56,11 @@ const rawFoods = [
   ["Aubergine/Tomato/Cucumber", 20, 0.7, 100, "g"],
   
   ["4 berries medley", 49, 1, 100, "g"],
+  ["Apple", 57, 0.4, 100, "g"],
+  ["Banana", 90, 1, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 13 (40)
+  // ------------Common Seasonings & Others------------- 15 (42)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
