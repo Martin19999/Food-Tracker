@@ -1,16 +1,18 @@
-export const V1 = 13;
-export const V2 = 28;
-export const V3 = 43;
+export const V1 = 15;
+export const V2 = 30;
+export const V3 = 45;
 
 const rawFoods = [
   // ----------------Breakfast & carbs ------------------
   ["Milk", 64, 3.4, 100, "ml"],
-  ["Greek yogurt", 137, 5.1, 100, "g"],
+  ["Greek *Style* low fat", 70, 4.7, 100, "g"],
+  ["Greek *Style* 10%", 137, 5.1, 100, "g"],
   ["Egg", 81, 7.8, 1, ""],
   ["Tesco penaut butter", 6.33, 0.245, 1, "g"],
   ["Mayonaise", 6.86, 0.08, 1, "g"],
 
   ["Honey hoop/wheatie", 3.86, 0.091, 1, "g"],
+  ["Tropical granola", 443, 9.4, 100, "g"],
   ["Pillow", 132, 2.5, 30, "g"],
   ["Oats", 37, 1.1, 10, "g"],
   ["Brennan blue/brown", 95, 3.7, 1, "slice"],
@@ -19,7 +21,7 @@ const rawFoods = [
   ["Penne rigate/Semolina", 350, 12.5, 100, "g"],
   ["Potato", 77, 2, 100, "g"],
 
-  // ----------------Lidl Meat------------------13
+  // ----------------Lidl Meat------------------15
   //Chicken
   ["Chicken breast fillet", 106, 23.5, 100, "g"],
   ["Chicken drumsticks", 131, 18.7, 100, "g"],
@@ -42,7 +44,7 @@ const rawFoods = [
   ["Tuna in spring water", 111, 26, 100, "g"],
   ["Prawns", 56, 12.1, 100, "g"],
 
-  // -------------------Veg----------------------15 (28)
+  // -------------------Veg----------------------15 (30)
   ["Tofu", 118, 13, 100, "g"],
   ["Baked beans", 81, 4.8, 100, "g"],
   ["Frozen peas", 70, 5.5, 100, "g"],
@@ -61,7 +63,7 @@ const rawFoods = [
   ["Banana", 90, 1, 100, "g"],
 
 
-  // ------------Common Seasonings & Others------------- 15 (43)
+  // ------------Common Seasonings & Others------------- 15 (45)
   ["Protein powder", 93, 23, 25, "g"],
   ["Olive oil", 8, 0, 1, "ml"],
   ["Soy sauce", 1.2, 0.092, 1, "ml"],
@@ -70,9 +72,9 @@ const rawFoods = [
   ["Balsamic vinegar dressing", 3.49, 0.03, 1, "ml"],
   ["Unsalted butter", 7.57, 0.005, 1, "g"],
   ["Green Pesto", 4.64, 0.045, 1, "g"],
+  ["Pesto", 364, 4.1, 100, "g"],
   ["Honey", 3.29, 0, 1, "g"],
   ["Dijon mustard", 1.56, 0.02, 1, "g"],
-  ["Pesto", 364, 4.1, 100, "g"],
   ["Cornflour/Flour", 35.4, 0.06, 10, "g"],
   ["Mozzarella cheese", 309, 23.3, 100, "g"],
   ["Red cheddar", 83, 5.1, 1, "slice"],
