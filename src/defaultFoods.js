@@ -59,7 +59,7 @@ const rawFoods = [
   ["Aubergine/Tomato/Cucumber", 20, 0.7, 100, "g"],
   
   ["4 berries medley", 49, 1, 100, "g"],
-  ["Apple", 57, 0.4, 100, "g"],
+  ["Apple/Blueberries", 57, 0.4, 100, "g"],
   ["Banana", 90, 1, 100, "g"],
 
 
